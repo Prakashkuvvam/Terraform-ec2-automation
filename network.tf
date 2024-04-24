@@ -8,7 +8,7 @@ resource "aws_vpc" "myvpc" {
 }
 resource "aws_subnet" "mysub" {
   vpc_id     = aws_vpc.myvpc.id
-  cidr_block = "17.17.1.0/16"
+  cidr_block = "17.17.1.0/24"
   tags = {
     "Name" = "Google Subnet-1"
   }
